@@ -1,7 +1,43 @@
-POST http://localhost:3000/signin 
-Content-Type: application/json
+# POST http://localhost:3000/signup
+# Content-Type: application/json
+# #eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZjAwZTJhMDliMTA4MmJkMjJhMGUyZiIsImlhdCI6MTc0Mzc4NTUxNH0.T7g6CCLxQRg82IZVUhiCc5Y8ewKA1lIOVf_ygcaJseg
+# {
+#     "fullname":"john",
+#     "email":"john@gmail.com",
+#     "password":"John@123"
+# }
+# POST http://localhost:3000/create-blog
+# Content-Type:application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZjAwZTJhMDliMTA4MmJkMjJhMGUyZiIsImlhdCI6MTc0Mzc4NTUxNH0.T7g6CCLxQRg82IZVUhiCc5Y8ewKA1lIOVf_ygcaJseg
+
+# {
+#     "title": "test title",
+#     "banner": "http://example.com/image-url",
+#     "desc": "this is a short description",
+#     "content": {
+#         "blocks": [1, 2]
+#     },
+#     "tags": ["tag1", "tag2"]
+# }
+# GET http://localhost:3000/trending-blogs
+
+# POST http://localhost:3000/search-blogs
+# Content-Type: application/json
+
+# {
+#     "tag":"anime"
+# }
+
+# POST http://localhost:3000/get-blog
+# Content-type: application/json
+
+# {
+#     "blog_id":"Death-NotenoUP6wk6WxIMjtGWosXbr"
+# }
+
+POST http://localhost:3000/get-profile
+Content-type: application/json
 
 {
-    "email": "kunaa@gmail.com",
-    "password": "Kunaal"
+    "username":"john"
 }
